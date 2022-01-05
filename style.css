@@ -4,3 +4,19 @@ body{
 b:hover{
 color: rgb(87, 88, 86);
 }
+
+.nav__responsive-ul{
+    display: none;
+}
+
+.nav{
+    background-color: #89d631;
+}
+.nav__li{
+    display: inline-block;
+    padding: 9px;
+    color: rgb(240, 255, 255);
+}
+.nav__li a{
+    color: white;
+}
