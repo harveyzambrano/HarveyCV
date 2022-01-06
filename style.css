@@ -1,5 +1,7 @@
 body{
     background-color: rgb(202, 204, 204);
+    
+    
 }
 b:hover{
 color: rgb(87, 88, 86);
@@ -10,13 +12,101 @@ color: rgb(87, 88, 86);
 }
 
 .nav{
-    background-color: #89d631;
-}
+    background: chartreuse;
+   margin-top: -16px; /*Separacion del menu con la parte de arriba del*/
+    }
 .nav__li{
-    display: inline-block;
+    display: inline-block; /*pone el menu en un relglon horizontal*/
     padding: 9px;
-    color: rgb(240, 255, 255);
+    color: rgba(60, 202, 4, 0.897);
 }
+.nav__li:hover >a {
+color: rgba(6, 148, 37, 0.801);
+}
+.nav__li:hover >i {
+    color: rgba(7, 190, 47, 0.801);
+    
+    }
+
+.nav__li-container{
+    position: relative;
+    top: 8px;
+    height: calc(100vh -64px);
+    background: chartreuse;
+    transition: 1s;
+    z-index: 1;
+}
+
 .nav__li a{
-    color: white;
+    color: rgb(40, 163, 10);
+    padding: 7px;
+    text-decoration: none;
+}
+.nav__li i{
+    width: 14px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nav__responsive-button{
+    text-align: right;
+    margin-left: 20px;
+    padding-right: 10px;
+    padding-top: 3px;
+  
+}
+.nav__responsive-button-container{
+    width: 100%;
+    font-size: 25px;
+    background: rgba(10, 196, 25, 0.788);
+    margin-top: -25px;
+    margin-left: -35px;
+    margin-right: -30px;
+  
+  }  
+
+
+@media only screen and (max-width: 500px){
+
+    .nav__ul{
+        display: none; /*oculta el menu normal*/
+        margin: 0px;
+        padding: 0px;
+    }
+    .nav{
+        height: 40px;
+        width: 100%; 
+       
+    }
+
+    .nav__responsive-ul{
+        display: block;
+        position: absolute;        
+        background: chartreuse;
+        height: 100%;
+        width: 100%;
+        margin-top: 40px;
+    }
+   
+       
+    
+    .nav__responsive-li{
+        width: 100%;
+        padding: 7px 10px;
+        margin-top: 10px;
+    }
+    .nav__responsive-li i{
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color: green;
+    }
+    .nav__responsive-li a{
+        color: rgba(9, 156, 21, 0.568);
+        text-align: none;
+    }
+    
+    
+   
 }
